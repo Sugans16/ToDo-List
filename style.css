@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins' , 'sans-serif';
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+}
+.containerz{
+    color: #fff;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 80px;
+    height: 100%;
+    width: 65%;
+    border-radius: 30px !important;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: #fff !important;
+}
+.card-header{
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    color: #333 !important;
+    font-weight: bold !important;
+    font-size: xx-large;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.add-task{
+    padding: 8px;
+    border-radius: 20px;
+    margin-right: 5px;
+    border-color: #ff1361;
+    width: 60% !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    width: 100%;
+}
+.card-top{
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    width: 100%;
+}
+.add-btn{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #ff5945;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    border-color: #44107a;
+}
+ul li{
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    list-style: none;
+    font-size: 20px;
+    padding: 5px 40px;
+    padding-right: 200px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-image: url(./Images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+}
+ul li.check{
+    color: #555; 
+    text-decoration: line-through;
+}
+ul li.check::before{
+    background-image: url(./Images/checked.png);
+}
+ul li span {
+    position: absolute;
+    right: 100px;
+    top: 3px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: #FF225B;
+    color: #fff;
+    
+}
